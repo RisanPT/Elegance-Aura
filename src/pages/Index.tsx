@@ -19,13 +19,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Chrome Traders | Handcrafted Fashion Jewelry</title>
+        <title>Zeeka | Handcrafted Fashion Jewelry</title>
         <meta 
           name="description" 
-          content="Discover timeless elegance with Chrome Traders. Shop our curated collection of handcrafted earrings, bangles, and ladies' accessories." 
+          content="Discover timeless elegance with Zeeka. Shop our curated collection of handcrafted earrings, bangles, and ladies' accessories." 
         />
-        <meta name="keywords" content="jewelry, earrings, bangles, fashion accessories, handcrafted jewelry, Chrome Traders" />
-        <link rel="canonical" href="https://chrometraders.com" />
+        <meta name="keywords" content="jewelry, earrings, bangles, fashion accessories, handcrafted jewelry, Zeeka" />
+        <link rel="canonical" href="https://zeeka.com" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

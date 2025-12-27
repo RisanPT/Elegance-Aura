@@ -21,7 +21,7 @@ const Header = () => {
               className="text-xl md:text-2xl font-display font-semibold tracking-wide text-foreground"
               whileHover={{ scale: 1.02 }}
             >
-              Chrome<span className="text-primary">Traders</span>
+              Zee<span className="text-primary">ka</span>
             </motion.span>
           </Link>
 
