@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Minus, Plus } from "lucide-react";
+import { useState } from "react";
 
 interface Product {
   id: string;
@@ -18,9 +19,15 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, index, whatsappNumber }: ProductCardProps) => {
+  const [quantity, setQuantity] = useState(1);
+
+  const incrementQuantity = () => setQuantity((prev) => prev + 1);
+  const decrementQuantity = () => setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
+
   const handleWhatsAppClick = () => {
+    const totalPrice = (product.price * quantity).toFixed(2);
     const message = encodeURIComponent(
-      `Hi, I am interested in buying "${product.title}" priced at $${product.price.toFixed(2)}. Please share more details.`
+      `Hello, I would like to order: ${product.title}\nQuantity: ${quantity}\nTotal Price: ₹${totalPrice}`
     );
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
@@ -85,16 +92,38 @@ const ProductCard = ({ product, index, whatsappNumber }: ProductCardProps) => {
               {product.description}
             </p>
           )}
+          
+          {/* Quantity Selector */}
+          <div className="flex items-center gap-3 mb-3">
+            <span className="text-sm text-muted-foreground">Qty:</span>
+            <div className="flex items-center border border-border rounded-md">
+              <button
+                onClick={decrementQuantity}
+                className="p-1 hover:bg-muted text-muted-foreground transition-colors"
+                disabled={quantity <= 1}
+              >
+                <Minus size={14} />
+              </button>
+              <span className="w-8 text-center text-sm font-medium">{quantity}</span>
+              <button
+                onClick={incrementQuantity}
+                className="p-1 hover:bg-muted text-muted-foreground transition-colors"
+              >
+                <Plus size={14} />
+              </button>
+            </div>
+          </div>
+
           <div className="flex items-center justify-between">
             <span className="text-lg font-semibold text-primary">
-              ${product.price.toFixed(2)}
+              ₹{(product.price * quantity).toFixed(2)}
             </span>
             <button
               onClick={handleWhatsAppClick}
-              className="md:hidden flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="md:hidden flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-sm"
             >
-              <MessageCircle size={14} />
-              Buy
+              <MessageCircle size={16} />
+              WhatsApp
             </button>
           </div>
         </div>

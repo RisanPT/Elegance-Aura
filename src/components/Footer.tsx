@@ -14,7 +14,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-display font-semibold mb-4">
-              Zee<span className="text-gold">ka</span>
+              Elegance<span className="text-gold"> Aura</span>
             </h3>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Crafting timeless elegance for the modern woman. Each piece is designed 
@@ -71,15 +71,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Mail size={16} className="text-gold" />
-                hello@chrometraders.com
+                contact@eleganceaura.com
               </li>
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Phone size={16} className="text-gold" />
-                +1 (555) 123-4567
+                +91 6238 494 305
               </li>
               <li className="flex items-start gap-3 text-background/70 text-sm">
                 <MapPin size={16} className="text-gold mt-0.5" />
-                123 Fashion Street<br />New York, NY 10001
+                Kerala, India
               </li>
             </ul>
           </motion.div>
@@ -93,7 +93,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 pt-8 border-t border-background/20 text-center text-sm text-background/50"
         >
-          <p>© {new Date().getFullYear()} Zeeka. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Elegance Aura. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

@@ -21,7 +21,7 @@ const Header = () => {
               className="text-xl md:text-2xl font-display font-semibold tracking-wide text-foreground"
               whileHover={{ scale: 1.02 }}
             >
-              Zee<span className="text-primary">ka</span>
+              Elegance<span className="text-primary"> Aura</span>
             </motion.span>
           </Link>
 
@@ -38,14 +38,7 @@ const Header = () => {
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </motion.a>
             ))}
-            <Link to="/admin">
-              <motion.span
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                whileHover={{ y: -2 }}
-              >
-                Admin
-              </motion.span>
-            </Link>
+
           </nav>
 
           {/* Mobile Menu Button */}
@@ -75,13 +68,7 @@ const Header = () => {
                 {item}
               </a>
             ))}
-            <Link 
-              to="/admin" 
-              onClick={() => setIsMenuOpen(false)}
-              className="block text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Admin
-            </Link>
+
           </div>
         </motion.nav>
       </div>

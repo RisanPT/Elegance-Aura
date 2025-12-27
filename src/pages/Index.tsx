@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { Skeleton } from "@/components/ui/skeleton";
 
 // Replace with your actual WhatsApp business number (include country code, no + or spaces)
-const WHATSAPP_NUMBER = "15551234567";
+const WHATSAPP_NUMBER = "916238494305";
 
 const Index = () => {
   const { data: products, isLoading } = useProducts();
@@ -19,13 +19,13 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Zeeka | Handcrafted Fashion Jewelry</title>
+        <title>Elegance Aura | Handcrafted Fashion Jewelry</title>
         <meta 
           name="description" 
-          content="Discover timeless elegance with Zeeka. Shop our curated collection of handcrafted earrings, bangles, and ladies' accessories." 
+          content="Discover timeless elegance with Elegance Aura. Shop our curated collection of handcrafted earrings, bangles, and ladies' accessories." 
         />
-        <meta name="keywords" content="jewelry, earrings, bangles, fashion accessories, handcrafted jewelry, Zeeka" />
-        <link rel="canonical" href="https://zeeka.com" />
+        <meta name="keywords" content="jewelry, earrings, bangles, fashion accessories, handcrafted jewelry, Elegance Aura" />
+        <link rel="canonical" href="https://eleganceaura.com" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
