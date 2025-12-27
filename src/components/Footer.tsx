@@ -14,7 +14,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <h3 className="text-2xl font-display font-semibold mb-4">
-              Chrome<span className="text-gold">Traders</span>
+              Zee<span className="text-gold">ka</span>
             </h3>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Crafting timeless elegance for the modern woman. Each piece is designed 
@@ -93,7 +93,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 pt-8 border-t border-background/20 text-center text-sm text-background/50"
         >
-          <p>© {new Date().getFullYear()} Chrome Traders. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Zeeka. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
